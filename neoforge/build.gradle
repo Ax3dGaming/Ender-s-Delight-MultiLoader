@@ -38,6 +38,7 @@ runs {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
+    implementation "net.darkhax.bookshelf:Bookshelf-NeoForge-${minecraft_version}:${bookshelf_version}"
     implementation "net.neoforged:neoforge:${neoforge_version}"
     compileOnly project(":common")
 }
